@@ -12,7 +12,7 @@ export const validators = {
       return value === anotherInput.value;
     }
   },
-  checkLenght(len: number):(value: string) => boolean {
+  checkLength(len: number):(value: string) => boolean {
     return function (value: string): boolean {
       return value.length === len;
     }

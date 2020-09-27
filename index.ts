@@ -18,8 +18,8 @@ const formGroup = new FormGroup({
   },
   password: {
     value: '',
-    validators: [validators.required],
-    errorMessage: 'At least should contain 6 carachters'
+    validators: [validators.required, validators.checkLength(6)],
+    errorMessage: 'Must contain at least 6 characters'
   },
   password2: {
     value: '',
